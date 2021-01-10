@@ -1,0 +1,15 @@
+[Unit]
+Description=PICS IFTTT Service
+After=network.target
+
+[Service]
+ExecStart=/home/pi/PICSIFTTT/picsifttt.sh
+WorkingDirectory=/home/pi/PICSIFTTT
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+

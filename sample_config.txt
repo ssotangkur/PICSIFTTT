@@ -1,0 +1,16 @@
+# Copy and rename this file to config.txt then update the variables below
+
+# You can get an IFTTT API key by creating a free account there then
+# once logged in, goto https://ifttt.com/maker_webhooks and click on
+# "Documentation". At the top you should see the phrase "Your key is: ..."
+IFTTT_KEY="<YOUR_IFTTT_API_KEY>"
+
+# Name of the service you want to monitor. Use "journalctl -u <SERVICE_NAME>"
+# to preview what will be parsed for events. The default here uses the service
+# created by https://github.com/ssotangkur/PICS
+SERVICE_NAME=pics.service
+
+# The grep search pattern to use when scanning the logs looking for events
+# to publish to IFTTT
+EVENT_SEARCH_PATTERN="[[:alpha:]]*Camera"
+
